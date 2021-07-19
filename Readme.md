@@ -1,6 +1,6 @@
-#Kafka consumer and producer using springboot
+# Kafka consumer and producer using springboot
 
-###Needed: Download [kafka](https://www.apache.org/dyn/closer.cgi?path=/kafka/2.8.0/kafka_2.13-2.8.0.tgz) in order to run the next commands
+### Before to start!: Download [kafka](https://www.apache.org/dyn/closer.cgi?path=/kafka/2.8.0/kafka_2.13-2.8.0.tgz) in order to run the next commands
 
 Start zookeeper
 
@@ -67,7 +67,7 @@ Topic bank-transfers is marked for deletion.
 Note: This will have no impact if delete.topic.enable is not set to true.
 ```
 
-####This example was copied from [here](https://github.com/altfatterz/kafka-demo/)
-####A basic tutorial of how to install [kafka](https://www.youtube.com/watch?v=qUbxyDTX7y0&ab_channel=ChargeAhead)
-####Good example of [producer](https://www.youtube.com/watch?v=NjHYWEV_E_o&ab_channel=TechPrimers) using bean configurations for Kafka
-####Good example of [consumer](https://www.youtube.com/watch?v=IncG0_XSSBg&ab_channel=TechPrimers) using bean configurations for Kafka
+#### This example was copied from [here](https://github.com/altfatterz/kafka-demo/)
+#### A basic tutorial of how to install [kafka](https://www.youtube.com/watch?v=qUbxyDTX7y0&ab_channel=ChargeAhead)
+#### Good example of [producer](https://www.youtube.com/watch?v=NjHYWEV_E_o&ab_channel=TechPrimers) using bean configurations for Kafka
+#### Good example of [consumer](https://www.youtube.com/watch?v=IncG0_XSSBg&ab_channel=TechPrimers) using bean configurations for Kafka
