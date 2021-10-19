@@ -1,5 +1,7 @@
 # Kafka consumer and producer using springboot
 
+- [Run Project](#run-project)
+
 ### Before to start!: Download [kafka](https://www.apache.org/dyn/closer.cgi?path=/kafka/2.8.0/kafka_2.13-2.8.0.tgz) in order to run the next commands
 
 Start zookeeper
@@ -31,10 +33,12 @@ Producer configuration
 spring:
   kafka:
     producer:
+      #Check the type of data that you want to send
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      #value-serializer: org.springframework.kafka.support.serializer.StringOrBytesSerializer
 ```
 
-Consumer configuration:
+Consumer configuration
 
 ```yaml
 spring:
@@ -66,6 +70,13 @@ bin/kafka-topics.sh --zookeeper localhost:2181 --delete --topic bank-transfers
 Topic bank-transfers is marked for deletion.
 Note: This will have no impact if delete.topic.enable is not set to true.
 ```
+
+
+## Run Project
+- CONSUMER and PRODUCER projects
+- In both projects check into **build.gradle** sourceCompatibility in order to use the same Java version installed
+- To run right click on **ProducerApp** and/or **ConsumerApp** java class and click on "debug ProducerApp" option
+- PS: check the **Producer configuration** into the readme. In order to check what type of data do you want to send
 
 #### This example was copied from [here](https://github.com/altfatterz/kafka-demo/)
 #### A basic tutorial of how to install [kafka](https://www.youtube.com/watch?v=qUbxyDTX7y0&ab_channel=ChargeAhead)
